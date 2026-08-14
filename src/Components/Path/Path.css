@@ -1,0 +1,263 @@
+/* ===========================
+        PATH SECTION
+=========================== */
+
+.path-section{
+    width:min(1200px,92%);
+    margin:120px auto;
+}
+
+/* ===========================
+        SECTION HEADER
+=========================== */
+
+.section-head{
+    text-align:center;
+    max-width:760px;
+    margin:0 auto 70px;
+}
+
+.eyebrow{
+    display:inline-block;
+    padding:8px 18px;
+    background:#EEF2FF;
+    color:#6C63FF;
+    border-radius:999px;
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:18px;
+}
+
+.display{
+    font-size:clamp(2.3rem,5vw,3.8rem);
+    color:#111827;
+    font-weight:800;
+    line-height:1.15;
+    margin-bottom:18px;
+}
+
+.section-head p{
+    color:#6B7280;
+    font-size:17px;
+    line-height:1.7;
+}
+
+/* ===========================
+        TIMELINE
+=========================== */
+
+.rail-wrap{
+    overflow-x:auto;
+    padding:30px 0;
+}
+
+.rail{
+    position:relative;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+
+    min-width:1000px;
+    gap:20px;
+}
+
+/* Line */
+
+.rail::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:28px;
+    left:55px;
+    right:55px;
+
+    height:4px;
+
+    background:#E5E7EB;
+
+    border-radius:10px;
+
+    z-index:0;
+
+}
+
+/* ===========================
+        NODE
+=========================== */
+
+.rail-node{
+
+    position:relative;
+
+    flex:1;
+
+    text-align:center;
+
+    z-index:2;
+
+}
+
+/* Circle */
+
+.rail-dot{
+
+    width:56px;
+    height:56px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:white;
+
+    border:3px solid #D1D5DB;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-weight:700;
+
+    color:#6B7280;
+
+    transition:.3s;
+
+}
+
+/* Label */
+
+.rail-label{
+
+    margin-top:16px;
+
+    color:#4B5563;
+
+    font-size:15px;
+
+    font-weight:600;
+
+}
+
+/* ===========================
+      COMPLETED
+=========================== */
+
+.rail-node:not(.pending) .rail-dot{
+
+    border-color:#22C55E;
+    color:#22C55E;
+
+}
+
+/* ===========================
+      CURRENT
+=========================== */
+
+.current .rail-dot{
+
+    background:#6C63FF;
+
+    border-color:#6C63FF;
+
+    color:white;
+
+    transform:scale(1.12);
+
+    box-shadow:0 10px 25px rgba(108,99,255,.35);
+
+}
+
+.current .rail-label{
+
+    color:#6C63FF;
+
+    font-weight:700;
+
+}
+
+/* ===========================
+      PENDING
+=========================== */
+
+.pending .rail-dot{
+
+    background:#F9FAFB;
+
+    border-color:#D1D5DB;
+
+    color:#9CA3AF;
+
+}
+
+.pending .rail-label{
+
+    color:#9CA3AF;
+
+}
+
+/* ===========================
+      HOVER
+=========================== */
+
+.rail-node:hover .rail-dot{
+
+    transform:translateY(-5px);
+
+}
+
+/* ===========================
+      RESPONSIVE
+=========================== */
+
+@media(max-width:900px){
+
+.path-section{
+
+margin:90px auto;
+
+}
+
+.display{
+
+font-size:2.3rem;
+
+}
+
+.section-head{
+
+margin-bottom:50px;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.path-section{
+
+margin:70px auto;
+
+}
+
+.display{
+
+font-size:2rem;
+
+}
+
+.section-head p{
+
+font-size:15px;
+
+}
+
+.rail{
+
+min-width:900px;
+
+}
+
+}

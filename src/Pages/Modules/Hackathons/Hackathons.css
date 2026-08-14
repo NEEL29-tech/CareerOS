@@ -1,0 +1,228 @@
+.hackathons-page {
+  min-height: 100vh;
+  background: #f7f8fc;
+  padding: 70px 16px 100px;
+  color: #111827;
+}
+
+.hackathons-header {
+  max-width: 1450px;
+  margin: 0 auto 60px;
+}
+
+.hackathons-header h1 {
+  margin: 0 0 20px;
+  font-size: 54px;
+  line-height: 1.1;
+  font-weight: 750;
+  letter-spacing: -2px;
+}
+
+.hackathons-header p {
+  margin: 0;
+  max-width: 800px;
+  color: #60708a;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+/* Grid */
+
+.hackathons-grid {
+  max-width: 1450px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+/* Card */
+
+.hackathon-card {
+  background: #ffffff;
+  border: 1px solid #dfe3ea;
+  border-radius: 20px;
+  padding: 42px;
+  min-height: 390px;
+
+  display: flex;
+  flex-direction: column;
+
+  transition: 0.2s ease;
+}
+
+.hackathon-card:hover {
+  transform: translateY(-3px);
+  border-color: #cdd5ff;
+  box-shadow: 0 15px 35px rgba(50, 60, 100, 0.08);
+}
+
+/* Top */
+
+.hackathon-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hackathon-number {
+  color: #9aa4b5;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.hackathon-level {
+  padding: 9px 17px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 700;
+
+  background: #f0f2f6;
+  color: #697386;
+}
+
+.hackathon-level.beginner {
+  color: #00966d;
+  background: #e9faf4;
+}
+
+.hackathon-level.intermediate {
+  color: #f06a13;
+  background: #fff4e8;
+}
+
+/* Content */
+
+.hackathon-content {
+  margin-top: 40px;
+}
+
+.hackathon-content h2 {
+  margin: 0 0 15px;
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 750;
+  color: #101827;
+}
+
+.hackathon-content p {
+  margin: 0;
+  color: #667085;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Topics */
+
+.hackathon-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 35px;
+}
+
+.hackathon-topics span {
+  background: #f5f6fa;
+  color: #697386;
+  border-radius: 8px;
+  padding: 9px 14px;
+  font-size: 14px;
+}
+
+/* Progress */
+
+.hackathon-progress-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 35px;
+}
+
+.hackathon-progress-bar {
+  flex: 1;
+  height: 10px;
+  background: #e5e7eb;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.hackathon-progress-fill {
+  height: 100%;
+  background: #5146e5;
+  border-radius: 20px;
+}
+
+.hackathon-progress-section > span {
+  min-width: 42px;
+  color: #667085;
+  font-size: 15px;
+}
+
+/* Button */
+
+.hackathon-button {
+  width: 100%;
+  margin-top: 28px;
+  padding: 17px;
+
+  border: 1px solid #dfe3ea;
+  border-radius: 10px;
+
+  background: #ffffff;
+  color: #182235;
+
+  font-size: 18px;
+  font-weight: 700;
+
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.hackathon-button:hover {
+  background: #5146e5;
+  color: #ffffff;
+  border-color: #5146e5;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .hackathons-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hackathons-header h1 {
+    font-size: 44px;
+  }
+
+  .hackathons-header p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hackathons-page {
+    padding: 45px 16px 70px;
+  }
+
+  .hackathons-header h1 {
+    font-size: 36px;
+  }
+
+  .hackathons-header p {
+    font-size: 18px;
+  }
+
+  .hackathon-card {
+    padding: 28px;
+  }
+
+  .hackathon-content h2 {
+    font-size: 27px;
+  }
+
+  .hackathon-content p {
+    font-size: 16px;
+  }
+}

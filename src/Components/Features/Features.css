@@ -1,0 +1,198 @@
+/* ===========================
+        FEATURES SECTION
+=========================== */
+
+.features-section{
+    width:min(1200px,92%);
+    margin:120px auto;
+}
+
+/* ===========================
+        SECTION HEADER
+=========================== */
+
+.section-head{
+    text-align:center;
+    margin-bottom:70px;
+}
+
+.eyebrow{
+    display:inline-block;
+    padding:8px 18px;
+
+    background:#EEF2FF;
+    color:#6C63FF;
+
+    border-radius:999px;
+
+    font-size:14px;
+    font-weight:600;
+
+    margin-bottom:18px;
+}
+
+.display{
+    font-size:clamp(2.2rem,5vw,3.6rem);
+    font-weight:800;
+    color:#111827;
+    line-height:1.15;
+    margin-bottom:15px;
+}
+
+/* ===========================
+        GRID
+=========================== */
+
+.feature-grid{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+
+    gap:30px;
+
+}
+
+/* ===========================
+        CARD
+=========================== */
+
+.feature-card{
+
+    background:#fff;
+
+    border:1px solid #E5E7EB;
+
+    border-radius:22px;
+
+    padding:32px;
+
+    transition:.35s ease;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+
+}
+
+.feature-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.10);
+
+}
+
+/* ===========================
+        STATUS
+=========================== */
+
+.feature-status{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-bottom:28px;
+
+    font-size:13px;
+
+    color:#6B7280;
+
+}
+
+.active{
+
+    color:#22C55E;
+
+    font-weight:700;
+
+}
+
+/* ===========================
+        ICON
+=========================== */
+
+.feature-icon{
+
+    width:64px;
+    height:64px;
+
+    margin-bottom:22px;
+
+}
+
+/* ===========================
+        TEXT
+=========================== */
+
+.feature-card h3{
+
+    font-size:1.45rem;
+
+    color:#111827;
+
+    margin-bottom:14px;
+
+}
+
+.feature-card p{
+
+    color:#6B7280;
+
+    line-height:1.7;
+
+    font-size:16px;
+
+}
+
+/* ===========================
+        RESPONSIVE
+=========================== */
+
+@media(max-width:900px){
+
+.feature-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.section-head{
+
+margin-bottom:50px;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.features-section{
+
+margin:80px auto;
+
+}
+
+.feature-card{
+
+padding:24px;
+
+}
+
+.display{
+
+font-size:2rem;
+
+}
+
+.feature-card h3{
+
+font-size:1.25rem;
+
+}
+
+.feature-card p{
+
+font-size:15px;
+
+}
+
+}

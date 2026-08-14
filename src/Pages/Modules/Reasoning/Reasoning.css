@@ -1,0 +1,579 @@
+.reasoning-page {
+  min-height: 100vh;
+  background: #f7f8fc;
+  color: #111827;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ================================
+   HERO
+================================ */
+
+.reasoning-hero {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  padding: 90px 40px 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 60px;
+}
+
+.reasoning-hero-content {
+  max-width: 650px;
+}
+
+.reasoning-badge {
+  display: inline-block;
+
+  padding: 8px 14px;
+
+  border-radius: 50px;
+
+  background: #eef2ff;
+  color: #4f46e5;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  letter-spacing: 0.5px;
+}
+
+.reasoning-hero h1 {
+  margin: 22px 0 20px;
+
+  font-size: 60px;
+  line-height: 1.05;
+
+  letter-spacing: -2px;
+}
+
+.reasoning-hero h1 span {
+  color: #4f46e5;
+}
+
+.reasoning-hero p {
+  max-width: 600px;
+
+  margin-bottom: 30px;
+
+  color: #6b7280;
+
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+
+/* ================================
+   BUTTONS
+================================ */
+
+.reasoning-buttons {
+  display: flex;
+  gap: 14px;
+}
+
+.reasoning-primary-btn,
+.reasoning-secondary-btn {
+  height: 48px;
+
+  padding: 0 24px;
+
+  border-radius: 8px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.reasoning-primary-btn {
+  border: 1px solid #4f46e5;
+
+  background: #4f46e5;
+  color: white;
+}
+
+.reasoning-primary-btn:hover {
+  background: #4338ca;
+}
+
+.reasoning-secondary-btn {
+  border: 1px solid #d1d5db;
+
+  background: white;
+  color: #374151;
+}
+
+.reasoning-secondary-btn:hover {
+  border-color: #4f46e5;
+  color: #4f46e5;
+}
+
+
+/* ================================
+   PROGRESS CARD
+================================ */
+
+.reasoning-progress-card {
+  width: 310px;
+
+  padding: 30px;
+
+  background: white;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 16px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.reasoning-progress-card p {
+  margin: 0;
+
+  color: #6b7280;
+
+  font-size: 14px;
+}
+
+.reasoning-progress-card h2 {
+  margin: 10px 0 20px;
+
+  font-size: 48px;
+}
+
+.reasoning-progress-bar {
+  width: 100%;
+
+  height: 8px;
+
+  background: #e5e7eb;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+}
+
+.reasoning-progress-fill {
+  height: 100%;
+
+  background: #4f46e5;
+
+  border-radius: 20px;
+}
+
+.reasoning-progress-info {
+  display: flex;
+
+  justify-content: space-between;
+
+  margin-top: 12px;
+
+  color: #6b7280;
+
+  font-size: 13px;
+}
+
+
+/* ================================
+   TOPICS
+================================ */
+
+.reasoning-topics {
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 70px 40px 90px;
+}
+
+.reasoning-section-heading {
+  margin-bottom: 40px;
+}
+
+.reasoning-section-heading > span {
+  color: #4f46e5;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+.reasoning-section-heading h2 {
+  margin: 12px 0;
+
+  font-size: 38px;
+
+  letter-spacing: -1px;
+}
+
+.reasoning-section-heading p {
+  color: #6b7280;
+
+  font-size: 16px;
+
+  line-height: 1.6;
+}
+
+
+/* ================================
+   TOPIC GRID
+================================ */
+
+.reasoning-topics-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 20px;
+}
+
+
+/* ================================
+   TOPIC CARD
+================================ */
+
+.reasoning-topic-card {
+  padding: 28px;
+
+  background: white;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 14px;
+
+  transition: 0.25s ease;
+}
+
+.reasoning-topic-card:hover {
+  transform: translateY(-4px);
+
+  border-color: #c7d2fe;
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.07);
+}
+
+.reasoning-topic-top {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 25px;
+}
+
+.reasoning-topic-number {
+  color: #9ca3af;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+
+/* LEVEL */
+
+.reasoning-level {
+  padding: 5px 10px;
+
+  border-radius: 50px;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.reasoning-level.beginner {
+  background: #ecfdf5;
+  color: #059669;
+}
+
+.reasoning-level.intermediate {
+  background: #fff7ed;
+  color: #ea580c;
+}
+
+.reasoning-level.advanced {
+  background: #fef2f2;
+  color: #dc2626;
+}
+
+
+/* CONTENT */
+
+.reasoning-topic-card h3 {
+  margin-bottom: 10px;
+
+  font-size: 22px;
+}
+
+.reasoning-topic-card p {
+  min-height: 48px;
+
+  margin-bottom: 25px;
+
+  color: #6b7280;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+
+/* ================================
+   TOPIC PROGRESS
+================================ */
+
+.reasoning-topic-progress {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 20px;
+}
+
+.reasoning-topic-progress-bar {
+  flex: 1;
+
+  height: 6px;
+
+  background: #e5e7eb;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+}
+
+.reasoning-topic-progress-fill {
+  height: 100%;
+
+  background: #4f46e5;
+
+  border-radius: 20px;
+}
+
+.reasoning-topic-progress > span {
+  min-width: 35px;
+
+  color: #6b7280;
+
+  font-size: 12px;
+
+  text-align: right;
+}
+
+
+/* ================================
+   TOPIC BUTTON
+================================ */
+
+.reasoning-topic-btn {
+  width: 100%;
+
+  height: 42px;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 7px;
+
+  background: white;
+
+  color: #374151;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.reasoning-topic-btn:hover {
+  border-color: #4f46e5;
+
+  color: #4f46e5;
+}
+
+
+/* ================================
+   PRACTICE SECTION
+================================ */
+
+.reasoning-practice {
+  max-width: 1120px;
+
+  margin: 20px auto 90px;
+
+  padding: 55px;
+
+  background: #111827;
+
+  color: white;
+
+  border-radius: 20px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 50px;
+}
+
+.reasoning-practice h2 {
+  margin: 18px 0;
+
+  font-size: 38px;
+
+  line-height: 1.15;
+
+  letter-spacing: -1px;
+}
+
+.reasoning-practice p {
+  max-width: 500px;
+
+  color: #9ca3af;
+
+  font-size: 15px;
+
+  line-height: 1.7;
+}
+
+
+/* ================================
+   PRACTICE STATS
+================================ */
+
+.reasoning-practice-stats {
+  display: grid;
+
+  grid-template-columns: repeat(2, 120px);
+
+  gap: 25px;
+}
+
+.reasoning-practice-stats div {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.reasoning-practice-stats strong {
+  font-size: 30px;
+}
+
+.reasoning-practice-stats span {
+  color: #9ca3af;
+
+  font-size: 12px;
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 900px) {
+
+  .reasoning-hero {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .reasoning-progress-card {
+    width: 100%;
+
+    max-width: 450px;
+  }
+
+  .reasoning-hero h1 {
+    font-size: 50px;
+  }
+
+  .reasoning-practice {
+    margin-left: 25px;
+    margin-right: 25px;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+}
+
+
+@media (max-width: 700px) {
+
+  .reasoning-hero {
+    padding: 60px 25px;
+  }
+
+  .reasoning-hero h1 {
+    font-size: 40px;
+  }
+
+  .reasoning-hero p {
+    font-size: 16px;
+  }
+
+  .reasoning-buttons {
+    flex-direction: column;
+  }
+
+  .reasoning-primary-btn,
+  .reasoning-secondary-btn {
+    width: 100%;
+  }
+
+  .reasoning-topics {
+    padding: 50px 25px;
+  }
+
+  .reasoning-section-heading h2 {
+    font-size: 30px;
+  }
+
+  .reasoning-topics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .reasoning-practice {
+    padding: 35px 25px;
+  }
+
+  .reasoning-practice h2 {
+    font-size: 30px;
+  }
+}
+
+
+@media (max-width: 450px) {
+
+  .reasoning-hero h1 {
+    font-size: 34px;
+  }
+
+  .reasoning-progress-card h2 {
+    font-size: 40px;
+  }
+
+  .reasoning-practice-stats {
+    grid-template-columns: repeat(2, 1fr);
+
+    width: 100%;
+  }
+}

@@ -1,0 +1,206 @@
+/* ===========================
+        PROOF SECTION
+=========================== */
+
+.proof-section{
+    width:min(1200px,92%);
+    margin:120px auto;
+}
+
+/* ===========================
+        STATS BAR
+=========================== */
+
+.stats-bar{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:24px;
+    margin-bottom:90px;
+}
+
+.stat{
+    background:#fff;
+    border:1px solid #E5E7EB;
+    border-radius:20px;
+    padding:28px;
+    text-align:center;
+    transition:.35s;
+    box-shadow:0 8px 25px rgba(0,0,0,.05);
+}
+
+.stat:hover{
+    transform:translateY(-6px);
+    box-shadow:0 16px 35px rgba(0,0,0,.10);
+}
+
+.num{
+    display:block;
+    font-size:2.2rem;
+    font-weight:800;
+    color:#6C63FF;
+    margin-bottom:8px;
+}
+
+.label{
+    display:block;
+    color:#6B7280;
+    font-size:15px;
+    line-height:1.6;
+}
+
+/* ===========================
+        SECTION HEADER
+=========================== */
+
+.section-head{
+    max-width:720px;
+    margin:0 auto 60px;
+    text-align:center;
+}
+
+.eyebrow{
+    display:inline-block;
+    padding:8px 18px;
+    background:#EEF2FF;
+    color:#6C63FF;
+    border-radius:999px;
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:18px;
+}
+
+.display{
+    font-size:clamp(2.3rem,5vw,3.8rem);
+    font-weight:800;
+    color:#111827;
+    line-height:1.15;
+}
+
+/* ===========================
+        TESTIMONIAL LOG
+=========================== */
+
+.log{
+    display:flex;
+    flex-direction:column;
+    gap:24px;
+}
+
+.log-entry{
+    display:grid;
+    grid-template-columns:18px 1fr auto;
+    gap:20px;
+    align-items:flex-start;
+
+    background:#fff;
+    border:1px solid #E5E7EB;
+    border-radius:20px;
+    padding:28px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.04);
+
+    transition:.3s;
+}
+
+.log-entry:hover{
+    transform:translateY(-5px);
+    box-shadow:0 16px 35px rgba(0,0,0,.08);
+}
+
+.log-status{
+    width:12px;
+    height:12px;
+    border-radius:50%;
+    background:#22C55E;
+    margin-top:8px;
+}
+
+.log-quote{
+    color:#374151;
+    font-size:16px;
+    line-height:1.8;
+}
+
+.who{
+    display:block;
+    margin-top:16px;
+    color:#6B7280;
+    font-size:14px;
+    font-weight:600;
+}
+
+.log-tag{
+    align-self:flex-start;
+    background:#F3F4F6;
+    color:#6C63FF;
+    padding:8px 14px;
+    border-radius:999px;
+    font-size:13px;
+    font-weight:700;
+    text-transform:uppercase;
+}
+
+/* ===========================
+        RESPONSIVE
+=========================== */
+
+@media(max-width:1000px){
+
+.stats-bar{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.proof-section{
+    margin:90px auto;
+}
+
+.log-entry{
+    grid-template-columns:1fr;
+    gap:16px;
+}
+
+.log-status{
+    display:none;
+}
+
+.log-tag{
+    justify-self:flex-start;
+}
+
+}
+
+@media(max-width:600px){
+
+.stats-bar{
+    grid-template-columns:1fr;
+}
+
+.proof-section{
+    margin:70px auto;
+}
+
+.display{
+    font-size:2rem;
+}
+
+.stat{
+    padding:24px;
+}
+
+.num{
+    font-size:1.8rem;
+}
+
+.log-entry{
+    padding:22px;
+}
+
+.log-quote{
+    font-size:15px;
+}
+
+}

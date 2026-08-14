@@ -1,0 +1,191 @@
+/* ===========================
+        FOOTER
+=========================== */
+
+.footer{
+    background:#111827;
+    color:#E5E7EB;
+    padding:80px 0 30px;
+    margin-top:120px;
+}
+
+.footer .wrap{
+    width:min(1200px,92%);
+    margin:auto;
+}
+
+/* ===========================
+        GRID
+=========================== */
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr 1fr;
+    gap:50px;
+    padding-bottom:50px;
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+/* ===========================
+        LOGO
+=========================== */
+
+.footer-about .logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    color:#fff;
+    text-decoration:none;
+
+    font-size:24px;
+    font-weight:700;
+
+    margin-bottom:22px;
+}
+
+.logo-mark{
+    width:42px;
+    height:42px;
+
+    background:#6C63FF;
+
+    border-radius:12px;
+
+    display:inline-block;
+}
+
+.footer-about p{
+    color:#9CA3AF;
+    line-height:1.8;
+    max-width:320px;
+    font-size:15px;
+}
+
+/* ===========================
+        LINKS
+=========================== */
+
+.footer-col h4{
+    color:#fff;
+    margin-bottom:20px;
+    font-size:18px;
+}
+
+.footer-col{
+    display:flex;
+    flex-direction:column;
+}
+
+.footer-col a{
+    color:#9CA3AF;
+    text-decoration:none;
+    margin-bottom:14px;
+    transition:.3s;
+}
+
+.footer-col a:hover{
+    color:#6C63FF;
+    transform:translateX(4px);
+}
+
+/* ===========================
+      BOTTOM BAR
+=========================== */
+
+.footer-bottom{
+    margin-top:30px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.footer-bottom span{
+    color:#9CA3AF;
+    font-size:14px;
+}
+
+.socials{
+    display:flex;
+    gap:14px;
+}
+
+.socials a{
+    width:40px;
+    height:40px;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:#1F2937;
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+}
+
+.socials a:hover{
+    background:#6C63FF;
+    transform:translateY(-3px);
+}
+
+/* ===========================
+      RESPONSIVE
+=========================== */
+
+@media(max-width:900px){
+
+.footer-grid{
+    grid-template-columns:1fr 1fr;
+}
+
+.footer-about{
+    grid-column:1 / -1;
+}
+
+.footer-bottom{
+    flex-direction:column;
+    gap:20px;
+    text-align:center;
+}
+
+}
+
+@media(max-width:600px){
+
+.footer{
+    padding:60px 0 25px;
+}
+
+.footer-grid{
+    grid-template-columns:1fr;
+    gap:35px;
+}
+
+.footer-about{
+    grid-column:auto;
+}
+
+.footer-about p{
+    max-width:100%;
+}
+
+.footer-col h4{
+    margin-bottom:14px;
+}
+
+.footer-col a{
+    margin-bottom:10px;
+}
+
+.socials{
+    justify-content:center;
+}
+
+}

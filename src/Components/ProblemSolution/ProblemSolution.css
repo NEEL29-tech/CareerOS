@@ -1,0 +1,191 @@
+/* ===========================
+      PROBLEM / SOLUTION
+=========================== */
+
+.problem-section{
+    width:min(1200px,92%);
+    margin:120px auto;
+}
+
+/* ===========================
+      SECTION HEADER
+=========================== */
+
+.section-head{
+    text-align:center;
+    max-width:760px;
+    margin:0 auto 70px;
+}
+
+.eyebrow{
+    display:inline-block;
+    padding:8px 18px;
+    background:#EEF2FF;
+    color:#6C63FF;
+    border-radius:999px;
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:18px;
+}
+
+.display{
+    font-size:clamp(2.2rem,5vw,3.6rem);
+    font-weight:800;
+    color:#111827;
+    line-height:1.15;
+    margin-bottom:18px;
+}
+
+.section-head p{
+    color:#6B7280;
+    font-size:17px;
+    line-height:1.7;
+}
+
+/* ===========================
+      TWO COLUMN LAYOUT
+=========================== */
+
+.versus{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:35px;
+}
+
+/* ===========================
+      CARD
+=========================== */
+
+.versus-card{
+    background:#fff;
+    border:1px solid #E5E7EB;
+    border-radius:24px;
+    padding:38px;
+    transition:.35s ease;
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+}
+
+.versus-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 45px rgba(0,0,0,.10);
+}
+
+/* ===========================
+      TAG
+=========================== */
+
+.versus-tag{
+    display:inline-block;
+    padding:8px 16px;
+    border-radius:999px;
+    font-size:13px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.old .versus-tag{
+    background:#FEF2F2;
+    color:#DC2626;
+}
+
+.new .versus-tag{
+    background:#ECFDF5;
+    color:#16A34A;
+}
+
+/* ===========================
+      TITLE
+=========================== */
+
+.versus-card h3{
+    font-size:2rem;
+    margin-bottom:30px;
+    color:#111827;
+}
+
+/* ===========================
+      LIST
+=========================== */
+
+.tab-list{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.tab-item{
+    display:flex;
+    align-items:flex-start;
+    gap:14px;
+
+    padding:16px;
+
+    border-radius:14px;
+
+    background:#F9FAFB;
+
+    color:#4B5563;
+
+    line-height:1.6;
+
+    transition:.3s;
+}
+
+.tab-item:hover{
+    background:#F3F4F6;
+}
+
+.dot{
+    width:10px;
+    height:10px;
+
+    border-radius:50%;
+
+    margin-top:8px;
+
+    flex-shrink:0;
+}
+
+.old .dot{
+    background:#EF4444;
+}
+
+.new .dot{
+    background:#22C55E;
+}
+
+/* ===========================
+      RESPONSIVE
+=========================== */
+
+@media(max-width:900px){
+
+.versus{
+    grid-template-columns:1fr;
+}
+
+.problem-section{
+    margin:90px auto;
+}
+
+}
+
+@media(max-width:600px){
+
+.problem-section{
+    margin:70px auto;
+}
+
+.versus-card{
+    padding:24px;
+}
+
+.versus-card h3{
+    font-size:1.7rem;
+}
+
+.section-head p{
+    font-size:15px;
+}
+
+}
