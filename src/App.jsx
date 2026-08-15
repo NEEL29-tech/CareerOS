@@ -1,4 +1,4 @@
-import Navbar from "./components/Navbar/Navbar";
+import Navbar from "./Components/Navbar/Navbar";
 
 import Home from "./pages/Home/Home";
 import Login from "./pages/Login/Login";
@@ -7,7 +7,7 @@ import Modules from "./pages/Modules/Modules";
 import DSA from "./pages/Modules/DSA/DSA";
 import Aptitude from "./pages/Modules/Aptitude/Aptitude";
 import Reasoning from "./pages/Modules/Reasoning/Reasoning";
-import Hackathons from "./pages/modules/Hackathons/Hackathons";
+import Hackathons from "./pages/Modules/Hackathons/Hackathons";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
