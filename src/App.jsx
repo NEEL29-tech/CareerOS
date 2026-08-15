@@ -1,13 +1,13 @@
 import Navbar from "./Components/Navbar/Navbar";
 
-import Home from "./pages/Home/Home";
-import Login from "./pages/Login/Login";
+import Home from "./Pages/Home/Home";
+import Login from "./Pages/Login/Login";
 
-import Modules from "./pages/Modules/Modules";
-import DSA from "./pages/Modules/DSA/DSA";
-import Aptitude from "./pages/Modules/Aptitude/Aptitude";
-import Reasoning from "./pages/Modules/Reasoning/Reasoning";
-import Hackathons from "./pages/Modules/Hackathons/Hackathons";
+import Modules from "./Pages/Modules/Modules";
+import DSA from "./Pages/Modules/DSA/DSA";
+import Aptitude from "./Pages/Modules/Aptitude/Aptitude";
+import Reasoning from "./Pages/Modules/Reasoning/Reasoning";
+import Hackathons from "./Pages/Modules/Hackathons/Hackathons";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -43,4 +43,4 @@ function App() {
   );
 }
 
-export default App;
+export default App;s
