@@ -1,6 +1,6 @@
 import React from "react";
 import "./DSA.css";
-import Navbar from "../../../components/Navbar/Navbar";
+import Navbar from "../../../Components/Navbar/Navbar";
 
 function DSA() {
   const topics = [

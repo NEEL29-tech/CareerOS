@@ -1,6 +1,6 @@
 import React from "react";
 import "./Hackathons.css";
-import Navbar from "../../../components/Navbar/Navbar";
+import Navbar from "../../../Components/Navbar/Navbar";
 
 const hackathons = [
   {

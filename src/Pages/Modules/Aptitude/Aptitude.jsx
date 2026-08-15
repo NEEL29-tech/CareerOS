@@ -1,6 +1,6 @@
 import React from "react";
 import "./Aptitude.css";
-import Navbar from "../../../components/Navbar/Navbar";
+import Navbar from "../../../Components/Navbar/Navbar";
 
 function Aptitude() {
   const topics = [
